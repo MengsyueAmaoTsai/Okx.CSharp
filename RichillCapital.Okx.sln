@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RichillCapital.Okx", "RichillCapital.Okx.csproj", "{20DC5CFC-DDCC-4312-83C5-0965DC787953}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{0B89756C-D227-46C4-B618-9C08DCB69D20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RichillCapital.Okx.DesktopExample", "Examples\RichillCapital.Okx.DesktopExample\RichillCapital.Okx.DesktopExample.csproj", "{88B0EC63-03F9-4F4A-80B5-FED4D90CB0B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20DC5CFC-DDCC-4312-83C5-0965DC787953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20DC5CFC-DDCC-4312-83C5-0965DC787953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20DC5CFC-DDCC-4312-83C5-0965DC787953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20DC5CFC-DDCC-4312-83C5-0965DC787953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88B0EC63-03F9-4F4A-80B5-FED4D90CB0B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B0EC63-03F9-4F4A-80B5-FED4D90CB0B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B0EC63-03F9-4F4A-80B5-FED4D90CB0B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B0EC63-03F9-4F4A-80B5-FED4D90CB0B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{88B0EC63-03F9-4F4A-80B5-FED4D90CB0B8} = {0B89756C-D227-46C4-B618-9C08DCB69D20}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B4C9469-23B5-4765-9A03-1B498A315945}
+	EndGlobalSection
+EndGlobal
