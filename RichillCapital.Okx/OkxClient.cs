@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using RichillCapital.SharedKernel.Diagnostics;
 
 namespace RichillCapital.Okx;
 
@@ -7,6 +8,10 @@ public sealed class OkxClient
     private const string RestUrl = "https://www.okx.com/";
     private const string RestUrlDemo = "https://www.okx.com";
 
+    private readonly string _apiKey;
+    private readonly string _secretKey;
+    private readonly string _passphrase;
+
     private readonly HttpClient _httpClient;
 
     public OkxClient(
@@ -14,6 +19,14 @@ public sealed class OkxClient
         string secretKey,
         string passphrase)
     {
+        Ensure.NotEmpty(apiKey);
+        Ensure.NotEmpty(secretKey);
+        Ensure.NotEmpty(passphrase);
+
+        _apiKey = apiKey;
+        _secretKey = secretKey;
+        _passphrase = passphrase;
+
         _httpClient = new HttpClient
         {
             BaseAddress = new Uri(RestUrl),
